@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hola Mundo REST</string>
+    <string name="identificador">Identificador</string>
+    <string name="contenido">Contenido</string>
+</resources>
