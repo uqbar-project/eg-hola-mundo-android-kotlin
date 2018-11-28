@@ -142,7 +142,7 @@ Pero además debemos crear un archivo de configuración de red `network_security
 </network-security-config>
 ```
 
-ahí permite que nos conectemos al servidor susodicho.
+Aquí habilitamos el acceso al dominio en cuestión.
 
 ## Arquitectura general
 
