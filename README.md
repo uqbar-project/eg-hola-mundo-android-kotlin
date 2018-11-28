@@ -62,7 +62,7 @@ interface GreetingService {
 
 - la annotation @GET define que vamos a hacer el request mediante un método GET
 - creamos un [companion object de Kotlin](https://kotlinlang.org/docs/reference/object-declarations.html) para la interfaz `GreetingService`, lo que en otros lenguajes implementábamos como _well known objects_ o _singletons_, y en él definimos la URL base que será http://rest-service.guides.spring.io
-- también debemos definir el path al que vamos a acceder dentro del server: en nuestro caso es la URL relativa "/greeting", eso termina formando "http://rest-service.guides.spring.io/greeting"
+- también debemos definir el path al que vamos a acceder dentro del server: en nuestro caso es la URL relativa "/greeting", eso termina formando http://rest-service.guides.spring.io/greeting
 - en Retrofit 2.0 las llamadas pueden ser sincrónicas o asincrónicas, entonces el método getGreeting devuelve un Observable de un valor que representaremos con un objeto nuevo: Greeting, que tenemos que codificar
 - la buena noticia es que no tenemos que recibir el JSON y convertirlo a un Greeting, esto lo hace retrofit utilizando como convención las propiedades del JSON devuelto (es lo que resuelve GsonConverterFactory). Si el JSON devuelve un objeto con propiedades id y content, es obvia la implementación de Greeting:
 
